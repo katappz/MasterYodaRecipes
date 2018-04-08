@@ -1,0 +1,474 @@
+{
+  "luis_schema_version": "2.2.0",
+  "versionId": "0.1",
+  "name": "Master Yoda Recipes",
+  "desc": "Ask Master Yoda for recipes",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "DarkSideQuestions"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "SearchRecipes"
+    },
+    {
+      "name": "SearchRecipesByCuisineType"
+    },
+    {
+      "name": "SearchRecipesByIngredient"
+    }
+  ],
+  "entities": [
+    {
+      "name": "CuisineType"
+    },
+    {
+      "name": "Ingredient"
+    },
+    {
+      "name": "Recipe"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "regex_entities": [],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "\" it ' s dinner time , sis it okay to eat only one apple ? \"",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "asdasdas",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "bruschetta",
+      "intent": "SearchRecipes",
+      "entities": [
+        {
+          "entity": "Recipe",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "can i eat chocolates today ?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "can you tell me if it is okay to eat some chips after the workout ?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "chicken",
+      "intent": "SearchRecipesByIngredient",
+      "entities": []
+    },
+    {
+      "text": "damn it",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "display the number of calories in 100 grams of pasta",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "feel like eating chinese",
+      "intent": "SearchRecipesByCuisineType",
+      "entities": [
+        {
+          "entity": "CuisineType",
+          "startPos": 17,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "find desserts made with oranges and chocolate",
+      "intent": "SearchRecipesByIngredient",
+      "entities": [
+        {
+          "entity": "CuisineType",
+          "startPos": 5,
+          "endPos": 12
+        },
+        {
+          "entity": "Ingredient",
+          "startPos": 24,
+          "endPos": 30
+        },
+        {
+          "entity": "Ingredient",
+          "startPos": 36,
+          "endPos": 44
+        }
+      ]
+    },
+    {
+      "text": "find me some chocolate desserts",
+      "intent": "SearchRecipesByCuisineType",
+      "entities": [
+        {
+          "entity": "Ingredient",
+          "startPos": 13,
+          "endPos": 21
+        },
+        {
+          "entity": "CuisineType",
+          "startPos": 23,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "fish and chips",
+      "intent": "SearchRecipes",
+      "entities": [
+        {
+          "entity": "Recipe",
+          "startPos": 0,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "healthy recipes",
+      "intent": "SearchRecipesByCuisineType",
+      "entities": [
+        {
+          "entity": "CuisineType",
+          "startPos": 0,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "how about some entree recipes",
+      "intent": "SearchRecipesByCuisineType",
+      "entities": [
+        {
+          "entity": "CuisineType",
+          "startPos": 15,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "how about some nouvelle cuisine",
+      "intent": "SearchRecipesByCuisineType",
+      "entities": [
+        {
+          "entity": "CuisineType",
+          "startPos": 15,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "how about some vegan recipes",
+      "intent": "SearchRecipesByCuisineType",
+      "entities": [
+        {
+          "entity": "CuisineType",
+          "startPos": 15,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "how many minutes to run to burn calories in a one big fries",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "hummus",
+      "intent": "SearchRecipes",
+      "entities": [
+        {
+          "entity": "Recipe",
+          "startPos": 0,
+          "endPos": 5
+        }
+      ]
+    },
+    {
+      "text": "i fell like eating fish",
+      "intent": "SearchRecipesByIngredient",
+      "entities": [
+        {
+          "entity": "Ingredient",
+          "startPos": 19,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "i have to tell you that i eat a chocolate bar of 500 kcal",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "in the mood for mexican",
+      "intent": "SearchRecipesByCuisineType",
+      "entities": [
+        {
+          "entity": "CuisineType",
+          "startPos": 16,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "is there a problem in eating 2 bananas before running ?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "italian recipes",
+      "intent": "SearchRecipesByCuisineType",
+      "entities": [
+        {
+          "entity": "CuisineType",
+          "startPos": 0,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "mangos, bananas, pears and strawberries",
+      "intent": "SearchRecipesByIngredient",
+      "entities": [
+        {
+          "entity": "Ingredient",
+          "startPos": 0,
+          "endPos": 5
+        },
+        {
+          "entity": "Ingredient",
+          "startPos": 8,
+          "endPos": 14
+        },
+        {
+          "entity": "Ingredient",
+          "startPos": 17,
+          "endPos": 21
+        },
+        {
+          "entity": "Ingredient",
+          "startPos": 27,
+          "endPos": 38
+        }
+      ]
+    },
+    {
+      "text": "meat dishes",
+      "intent": "SearchRecipesByIngredient",
+      "entities": [
+        {
+          "entity": "Ingredient",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "pepperoni and green peppers",
+      "intent": "SearchRecipesByIngredient",
+      "entities": [
+        {
+          "entity": "Ingredient",
+          "startPos": 0,
+          "endPos": 8
+        },
+        {
+          "entity": "Ingredient",
+          "startPos": 14,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "please help me in calculating the calories in one cheese burger",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "portuguese dishes",
+      "intent": "SearchRecipesByCuisineType",
+      "entities": [
+        {
+          "entity": "CuisineType",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "pot roast",
+      "intent": "SearchRecipes",
+      "entities": [
+        {
+          "entity": "Recipe",
+          "startPos": 0,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "recipes with mushrooms and peas",
+      "intent": "SearchRecipesByIngredient",
+      "entities": [
+        {
+          "entity": "Ingredient",
+          "startPos": 13,
+          "endPos": 21
+        },
+        {
+          "entity": "Ingredient",
+          "startPos": 27,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "record that i had a nutella roll for lunch",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "search for dishes with garlic",
+      "intent": "SearchRecipesByIngredient",
+      "entities": [
+        {
+          "entity": "Ingredient",
+          "startPos": 23,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "search for recipes with peanut butter",
+      "intent": "SearchRecipesByIngredient",
+      "entities": [
+        {
+          "entity": "Ingredient",
+          "startPos": 24,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "should i join the dark side?",
+      "intent": "DarkSideQuestions",
+      "entities": []
+    },
+    {
+      "text": "show me a list of healthy food items to eat ?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "show me recipes with chicken.",
+      "intent": "SearchRecipesByIngredient",
+      "entities": [
+        {
+          "entity": "Ingredient",
+          "startPos": 21,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "show me some polish recipes",
+      "intent": "SearchRecipesByCuisineType",
+      "entities": [
+        {
+          "entity": "CuisineType",
+          "startPos": 13,
+          "endPos": 18
+        }
+      ]
+    },
+    {
+      "text": "soup",
+      "intent": "SearchRecipes",
+      "entities": [
+        {
+          "entity": "Recipe",
+          "startPos": 0,
+          "endPos": 3
+        }
+      ]
+    },
+    {
+      "text": "tell me what kind of food i should eat ?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "this is stupid",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "this is useless",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "vegetarian recipes",
+      "intent": "SearchRecipesByCuisineType",
+      "entities": [
+        {
+          "entity": "CuisineType",
+          "startPos": 0,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "who's my father?",
+      "intent": "DarkSideQuestions",
+      "entities": []
+    },
+    {
+      "text": "with shrimp and broccoli",
+      "intent": "SearchRecipesByIngredient",
+      "entities": [
+        {
+          "entity": "Ingredient",
+          "startPos": 5,
+          "endPos": 10
+        },
+        {
+          "entity": "Ingredient",
+          "startPos": 16,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "you don't know the power of the dark side",
+      "intent": "DarkSideQuestions",
+      "entities": []
+    },
+    {
+      "text": "you're a moron",
+      "intent": "None",
+      "entities": []
+    }
+  ]
+}
