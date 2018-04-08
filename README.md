@@ -19,24 +19,27 @@ https://developer.edamam.com/edamam-recipe-api
 
 After registering in LUIS.ai portal import the app's model by clicking on "Import new app" (https://www.luis.ai/applications) 
 Then choose the model's json file that is in (https://github.com/katappz/MasterYodaRecipes/blob/master/MasterYoda/Example/Master%20Yoda%20Recipes.json). 
+
 Train and publish your model (You can see how in https://docs.microsoft.com/en-us/azure/cognitive-services/luis/luis-how-to-train).
 
 Then you'll have your model ID and Subscription Key for your app.
 Copy and paste these into the project's RootDialog.cs class:
 
-	/// <summary>
-  /// Change Model ID and Subscription Key below with your own (https://www.luis.ai/home):
-  /// </summary>
-  [LuisModel("MODEL_ID", "SUBSCRIPTION_KEY")]
+ ```
+/// <summary>
+/// Change Model ID and Subscription Key below with your own (https://www.luis.ai/home):
+/// </summary>
+[LuisModel("MODEL_ID", "SUBSCRIPTION_KEY")]
+```
 
 After registering for a free API key with Edamam (https://developer.edamam.com/edamam-recipe-api) you'll have your API_ID and APP_KEY. 
 Copy and paste these into the project's SearchRecipesManager.cs class:
 
-	//------------------------------------------------
-  //Go to https://developer.edamam.com/edamam-recipe-api to request free API_ID and APP_KEY and set values below
+```
+// Go to https://developer.edamam.com/edamam-recipe-api to request free API_ID and APP_KEY and set values below
   private string appID = "[API_ID]";
   private string appKey = "[APP_KEY]";
-  //------------------------------------------------
+```
 
 Save, build and run and then you're ready to use on BotFramework emulator :)
 
